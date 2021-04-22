@@ -32,13 +32,16 @@ const App = () => {
 
   return (
     <div className='App'>
+      <div  className='title'>
+      <h1>ENTER YOUR DESIRED RECIPE</h1>
+      </div>
       <form onSubmit={getSearch} className='search-form'>
-        <input type='text'
-          value={search}
+        <input type='text' className='search-bar'
+          value={search} placeholder='enter which product of recipe'
           onChange={updateSearch} />
         <button type='submit' className='search-button'>search</button>
       </form>
-      
+      <div className='recipes'>
       {recipes.map(recipe => (
         <Recipe
           title={recipe.recipe.label}
@@ -46,14 +49,10 @@ const App = () => {
           image={recipe.recipe.image}
           ingredients={recipe.recipe.ingredients} />
       ))}
-    </div>
+      </div>
+    </div >
   )
 }
 
 
 export default App
-
-
-
-
-
