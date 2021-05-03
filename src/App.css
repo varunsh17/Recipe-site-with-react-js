@@ -1,7 +1,7 @@
 .App{
     
     min-height: 100vh;
-    background-image: radial-gradient(circle, #ff0808, #ff0046, #e9007a, #b200af, #260cda);
+    background-image: radial-gradient(circle, #ff0808,#b200af, #260cda);
 }
 .title{
     display: flex;

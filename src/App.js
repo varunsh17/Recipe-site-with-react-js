@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css'
 import Recipe from './comp/Recipe'
+import Button from '@material-ui/core/Button';
+
 const App = () => {
   const APP_ID = '26362fdd'
   const APP_KEY = '5b1687b18d0a72b6d8e3c06a65028b45'
@@ -39,7 +41,7 @@ const App = () => {
         <input type='text' className='search-bar'
           value={search} placeholder='enter which product of recipe'
           onChange={updateSearch} />
-        <button type='submit' className='search-button'>search</button>
+        <Button type='submit' className='search-button'>search</Button>
       </form>
       <div className='recipes'>
       {recipes.map(recipe => (
